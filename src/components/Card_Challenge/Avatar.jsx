@@ -1,7 +1,9 @@
-import React from "react";
-
 const Avatar = () => {
-  return <div>Avatar</div>;
+  return (
+    <div>
+      <img src="profile-pic.jpg" style={{ width: "300px" }} alt="Jason Hall" />
+    </div>
+  );
 };
 
 export default Avatar;

@@ -1,12 +1,14 @@
-import Message from "./components/Message.jsx";
-import Clock from "./components/Clock.jsx";
+import Menu from "./components/Pizza_Menu/Menu.jsx";
+import Header from "./components/Pizza_Menu/Header.jsx";
+import Footer from "./components/Pizza_Menu/Footer.jsx";
 
 function App() {
   return (
-    <>
-      <Clock />
-      <Message />
-    </>
+    <div className="container">
+      <Header />
+      <Menu />
+      <Footer />
+    </div>
   );
 }
 

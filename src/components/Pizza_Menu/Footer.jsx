@@ -1,13 +1,16 @@
-function Footer() {
-  const hour = new Date().getHours();
-  const openHour = 12;
-  const closeHour = 22;
-  const isOpen = hour >= openHour && hour <= closeHour;
+import OpenTime from "./OpenTime.jsx";
 
+function Footer() {
   return (
     <footer className="footer">
-      <div>
-        {isOpen && <p>We're open until {closeHour - 12}:00 PM.</p>}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <OpenTime />
         <button className="btn">Order</button>
       </div>
     </footer>

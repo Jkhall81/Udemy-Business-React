@@ -43,17 +43,15 @@ const Menu = () => {
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <div>
-        {pizzaData.map((pizza, index) => (
-          <Pizza
-            key={index}
-            name={pizza.name}
-            ingredients={pizza.ingredients}
-            photoName={pizza.photoName}
-            price={pizza.price}
-          />
-        ))}
-      </div>
+      {pizzaData.length > 0 ? (
+        <ul className="pizzas">
+          {pizzaData.map((pizza, index) => (
+            <Pizza key={index} pizzaObj={pizza} />
+          ))}
+        </ul>
+      ) : (
+        "we're still working on our menu, Please come back later."
+      )}
     </main>
   );
 };

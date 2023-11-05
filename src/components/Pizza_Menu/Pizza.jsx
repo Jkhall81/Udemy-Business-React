@@ -1,10 +1,10 @@
-const Pizza = ({ pizzaObj }) => {
+const Pizza = ({ pizzaObj: { name, ingredients, photoName, price, blur } }) => {
   return (
-    <li className="">
-      <img src={pizzaObj.photoName} alt="first pizza image" />
-      <h3>{pizzaObj.name}</h3>
-      <p>{pizzaObj.ingredients}</p>
-      <span>{pizzaObj.price}</span>
+    <li style={{ filter: blur }}>
+      <img src={photoName} alt="first pizza image" />
+      <h3>{name}</h3>
+      <p>{ingredients}</p>
+      <span>{price}</span>
     </li>
   );
 };

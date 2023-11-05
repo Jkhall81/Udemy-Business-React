@@ -7,36 +7,42 @@ const Menu = () => {
       ingredients: "Tomato, Mozarella, Spiach, and Ricotta Cheese",
       photoName: "pizza1.jpeg",
       price: "$10.99",
+      blur: "",
     },
     {
       name: "Spam Pizza",
       ingredients: "Tomato, Mozarella, Spiach, and Spam",
       photoName: "pizza2.jpeg",
       price: "$12.99",
+      blur: "blur(5px)",
     },
     {
       name: "taco Pizza",
       ingredients: "Tomato, Mozarella, Tacos, and Ricotta Cheese",
       photoName: "pizza3.jpeg",
       price: "$15.99",
+      blur: "",
     },
     {
       name: "OMG Pizza",
       ingredients: "Tomato, Mozarella, Secrets, and Ricotta Cheese",
       photoName: "pizza4.jpeg",
       price: "$9.99",
+      blur: "",
     },
     {
       name: "Backdoor Pizza",
       ingredients: "Tomato, Mozarella, Deviousness, and Ricotta Cheese",
       photoName: "pizza5.jpeg",
       price: "$19.99",
+      blur: "",
     },
     {
       name: "Last Pizza",
       ingredients: "Tomato, Mozarella, Spiach, and Ricotta Cheese",
       photoName: "pizza6.jpeg",
       price: "$19.99",
+      blur: "",
     },
   ];
 
